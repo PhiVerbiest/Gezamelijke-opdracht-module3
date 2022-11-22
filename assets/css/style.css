@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
+
+
 body {
     font-size: 100%;
     font-family: 'Titillium', Geneva, sans-serif;
@@ -10,60 +12,179 @@ body {
     width: 100%;
     max-width: 1920px;
     margin: 0px auto;
+    margin-top: -270px;
+}
+
+#image-container {
+    background-image: url(/assets/img/background-image.png);
+    background-image: no-repeat;
+    background-size: cover;
+}
+
+section {
+   width: 100%;
+   height: 100vh;
 }
 
 :root {
     --background: rgb(166, 226, 166);
+    --white: white;
 }
 
 header {
+  margin-top: ;
+  z-index: -1;
     float: left;
-    width: 70%;
-    height: 15vh;
+    width: 100%;
+    height: 20vh;
 
-    border-bottom-right-radius: 100px;
+    opacity: 0.5;
 
-    background-color:  var(--background);
+    /* border-bottom-right-radius: 100px; */
+
+    background-color:  var(--white);
     margin: 0px auto;
-    opacity: 80%;
 }
 
 header h1 {
-    float: left;
+  padding-top: 35px;
+    padding-left: 65px;
+    opacity: 1;
+}
+
+/* #logo {
+  position: absolute;
+} */
+
+nav {
+    align-items: center;
+
+    padding-left: 50px;
+    width: 100%;
+    height: 250px;
+}
+
+#navDiv{
+  position: sticky;
+  top: 120px;
+  z-index: 69;
 }
 
 #nav-container {
     width: 60%;
-    height: 50px;
+
+    overflow: hidden;
 }
 
 #nav-container ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-
-
-section {
-    width: 100%;
-    height: 100vh;
     
-    opacity: 80%;
 }
+
+#nav-container li {
+    float: left;
+}
+
+#nav-container li a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 100%;
+}
+
+#nav-container a:hover {
+    color: var(--background);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+#skew {
+  width: 100%;
+  height: 40vh;
+
+  opacity: 50%;
+  clip-path: polygon(0 0, 100% 0%, 100% 37%, 0 78%);
+  overflow: hidden;
+
+  background-color: black;
+}
+
 
 img {
     float: right;
     width: 15%;
     height: 100px;
+    padding-top: 15px;
 
-    margin: 10px auto;
+    margin: 10px auto;  
+}
+
+#border h2{
+    margin-left: 6%;
+}
+
+#border h1{
+    margin-left: 6%;
+}
+
+#border p {
+    margin-left: 6%;
 }
 
 #border{
     border: 1px solid black;
-    width: 30%;
-    height: 60%;
+    width: 35.5%;
+    height: 85%;
     margin: 10px auto;
 }
 
@@ -72,27 +193,205 @@ input{
 }
 
 #fullName{
-    width: 200px;
+    margin-top: 2%;
+    width: 39%;
     height: 25px;
 
 }
 
 #email{
-    width: 200px;
+    margin-top: 2%;
+    width: 39%;
     height: 25px;
 }
 
 #telephoneNumber{
-    width: 200px;
+    margin-top: 2%;
+    width: 39%;
     height: 25px;
 }
 
 #adres{
-    width: 200px;
+    margin-top: 2%;
+    width: 39%;
     height: 25px;
 }
 
 #questions{
-    width: 23,0208333%;
+    margin-top: 2%;
+    width: 86.8%;
     height: 100px;
 }
+
+#submit:hover{
+    background-color: rgb(84, 146, 84);
+}
+
+#submit{
+    background-color:  var(--background);;
+    margin-top: 2%;
+    width: 88%;
+    height: 40px;
+}
+
+/* Arrow shit */
+
+/* Down */
+.icons svg:nth-child(3):hover{
+    transform:translateY(10px);  
+   
+  }
+
+@media all and (max-width: 390px){
+
+    #border{
+      width: 100%;
+    }
+    
+    body{
+      overflow-x: hidden;
+    }
+    .navigation-mannual{
+      max-width: 390px;
+    }
+    .navigation-auto{
+      max-width: 390px;
+    }
+}
+
+  .slider{
+    margin: 10px auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+  }
+  
+  .navigation-mannual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mannual-btn{
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .mannual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .mannual-btn:hover{
+    background-color: #ccc;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /* Automatic Navigation */
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~.navigation-auto .auto-btn-1{
+    background: #ccc;
+  }
+  
+  #radio2:checked ~.navigation-auto .auto-btn-2{
+    background: #ccc;
+  }
+  
+  
+  #radio3:checked ~.navigation-auto .auto-btn-3{
+    background: #ccc;
+  }
+  
+  #radio4:checked ~.navigation-auto .auto-btn-4{
+    background: #ccc;
+  }
+
+
+  .animation-to-top{
+    position: relative;
+    animation-name: animatie1;
+    animation-duration: 0.9s; 
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes animatie1 {
+    0%   {left:0px; top: -58px;}
+    100%  {left:0px; top: 0px;}
+    
+  }
+
+  .animation-to-side{
+    position: relative;
+    animation-name: animtie2;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes animtie2 {
+    0%   {left:0px; top:0px;}
+    100%  {left:-400px; top:0px;}
+  }
+
+  .opacity-1{
+    opacity: 0.8;
+  }
