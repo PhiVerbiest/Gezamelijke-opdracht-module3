@@ -32,7 +32,6 @@ section {
 }
 
 header {
-  margin-top: ;
   z-index: -1;
     float: left;
     width: 100%;
@@ -169,7 +168,14 @@ img {
     margin: 10px auto;  
 }
 
-#border h2{
+#border{
+  border: 1px solid black;
+  width: 35.5%;
+  height: 85%;
+  margin: 10px auto;
+}
+
+/* #border h2{
     margin-left: 6%;
 }
 
@@ -179,13 +185,6 @@ img {
 
 #border p {
     margin-left: 6%;
-}
-
-#border{
-    border: 1px solid black;
-    width: 35.5%;
-    height: 85%;
-    margin: 10px auto;
 }
 
 input{
@@ -232,7 +231,7 @@ input{
     margin-top: 2%;
     width: 88%;
     height: 40px;
-}
+} */
 
 /* Arrow shit */
 
