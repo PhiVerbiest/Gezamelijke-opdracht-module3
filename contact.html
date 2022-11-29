@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/contact-style.css">
+    <title>contact</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav id="nav-container">  
+                <ul>
+                    <li id="home"><a href="#">Home</a></li>
+                    <div class="dropdown">
+                    <li><a class="dropdownbtn" href="#">Onkruidbeheer
+                        <svg width="12pt" height="12pt" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+                            <path transform="scale(50)" d="m21 8.5-9 9-9-9" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+                          </svg>
+                            <div class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div>
+                        
+                      </div>
+                    </a></li>
+                    <li><a href="#">Ontwerp</a></li>
+                    <div class="dropdown">
+                    <li><a class="dropdownbtn" href="#">Tuinverzorging</svg>
+                      <svg width="12pt" height="12pt" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+                            <path transform="scale(50)" d="m21 8.5-9 9-9-9" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+                        </svg>
+                      <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                      </div>
+                        
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="image-container">
+    
+        </section>
+
+        <section>
+            <form action="/assets/php/connect.php" method="post">
+            <input class="inputs" type="text" name="fullName" id="fullName" placeholder="Vollidge naam">
+            <input class="inputs" type="email" name="email" id="email" placeholder="email"><br>
+            <input class="inputs" type="number" name="telephoneNumber" id="telephoneNumber" placeholder="Telfoon nummer">
+            <input class="inputs" type="text" name="adres" id="adres" placeholder="Adress"><br>
+            <input class="inputs" type="text" name="questions" id="questions" placeholder="Vragen?">
+            <input class="inputs" type="submit" name="submit" id="submit" value="Verstuur!">
+        </form>
+        </section>
+    
+
+    </div>
+    
+</body>
+</html>

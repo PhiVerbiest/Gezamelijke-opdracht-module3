@@ -1,0 +1,247 @@
+* {
+  margin: 0 auto;
+}
+
+#container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0px auto;
+}
+
+:root {
+  --background: rgb(166, 226, 166);
+  --white: white;
+}
+
+header {
+  width: 60%;
+  height: 10vh;
+}
+
+section {
+  height: 70vh;
+}
+
+#image-container {
+  width: 100%;
+  height: 60vh;
+  background-image: url(/assets/img/contact\ image.jpg);
+  background-image: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  float: left;
+
+  padding-left: 50px;
+  width: 100%;
+  height: 250px;
+}
+
+#navDiv{
+position: sticky;
+top: 120px;
+z-index: 69;
+}
+
+header #nav-container {
+  overflow: hidden;
+}
+
+#nav-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#nav-container li {
+  float: left;
+}
+
+#nav-container li a {
+  display: block;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  opacity: 100%;
+}
+
+#nav-container a:hover {
+  color: var(--background);
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+
+#form {
+    float: left;
+  }
+
+  #fullName {
+    width: 30%;
+    height: 40px;
+
+    margin: 5px auto;
+
+    font-size: 15px;
+  }
+
+  #email {
+    width: 30%;
+    height: 40px;
+
+    margin: 5px auto;
+
+    font-size: 15px;
+  }
+
+  #telephoneNumber {
+    width: 30%;
+    height: 40px;
+
+    margin: 5px auto;
+
+    font-size: 15px;    
+  }
+
+  #adres {
+    width: 30%;
+    height: 40px;
+
+    margin: 5px auto;
+
+    font-size: 15px;
+  }
+
+  #questions {
+    width: 30%;
+    height: 40px;
+
+    margin: 5px auto;
+
+    font-size: 15px;
+  }
+
+  #submit {
+    width: 30%;
+    height: 40px;
+
+    margin: 5px auto;
+
+    font-size: 15px;
+  }
+
+@media all and (max-width: 390px){
+
+    #form {
+      display: flex;
+      justify-content: center;
+    }
+
+    #fullName {
+      width: 100%;
+      height: 40px;
+
+      margin: 10px auto;
+
+      font-size: 15px;
+    }
+
+    #email {
+      width: 100%;
+      height: 40px;
+
+      margin: 10px auto;
+
+      font-size: 15px;
+    }
+
+    #telephoneNumber {
+      width: 100%;
+      height: 40px;
+
+      margin: 10px auto;
+
+      font-size: 15px;
+    }
+
+    #adres {
+      width: 95.5%;
+      height: 40px;
+
+      margin: 10px auto;
+
+      font-size: 15px;
+    }
+
+    #questions {
+      width: 95.5%;
+      height: 40px;
+
+      margin: 10px auto;
+
+      font-size: 15px;
+    }
+
+    #submit {
+      width: 98%;
+      height: 40px;
+
+      margin: 10px auto;
+
+      font-size: 15px;
+    }
+    
+    body{
+      overflow-x: hidden;
+    }
+    .navigation-mannual{
+      max-width: 390px;
+    }
+    .navigation-auto{
+      max-width: 390px;
+    }
+}
