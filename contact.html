@@ -1,66 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/contact-style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/contact-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <header>
-            <nav id="nav-container">  
-                <ul>
-                    <li id="home"><a href="/index.html">Home</a></li>
-                    <div class="dropdown">
-                    <li><a class="dropdownbtn" href="#">Onkruidbeheer
-                        <svg width="12pt" height="12pt" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
-                            <path transform="scale(50)" d="m21 8.5-9 9-9-9" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
-                          </svg>
-                            <div class="dropdown-content">
-                              <a href="#">Link 1</a>
-                              <a href="#">Link 2</a>
-                              <a href="#">Link 3</a>
-                            </div>
-                        
-                      </div>
-                    </a></li>
-                    <li><a href="#">Ontwerp</a></li>
-                    <div class="dropdown">
-                    <li><a class="dropdownbtn" href="#">Tuinverzorging</svg>
-                      <svg width="12pt" height="12pt" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
-                            <path transform="scale(50)" d="m21 8.5-9 9-9-9" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
-                        </svg>
-                      <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
-                    </a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <section id="image-container">
-            <p id="contact-text">CONTACT</p>
-        </section>
+      <header>
+        <nav id="nav-container">
+          <div class="mobile-container">
+            <div class="topnav">
+              <a href="index.html" class="active">Hogedijk Hovenier</a>
+              <!-- Navigation links (hidden by default) -->
+              <div id="myLinks">
+                <a class="color" href="#news">Onkruidbeheer</a>
+                <a class="color" href="#contact">Ontwerp</a>
+                <a class="color" href="#about">Tuinverzorging</a>
+              </div>
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-        <section>
-            <form action="/assets/php/connect.php" method="post">
-            <input class="inputs" type="text" name="fullName" id="fullName" placeholder="Vollidge naam">
-            <input class="inputs" type="email" name="email" id="email" placeholder="email"><br>
-            <input class="inputs" type="number" name="telephoneNumber" id="telephoneNumber" placeholder="Telfoon nummer">
-            <input class="inputs" type="text" name="adres" id="adres" placeholder="Adress"><br>
-            <input class="inputs" type="text" name="questions" id="questions" placeholder="Vragen?">
-            <input class="inputs" type="submit" name="submit" id="submit" value="Verstuur!">
+      <section id="image-container">
+        <p id="contact-text">CONTACT</p>
+      </section>
+
+      <section>
+        <form action="/assets/php/connect.php" method="post">
+          <input
+            class="inputs"
+            type="text"
+            name="voornaam"
+            id="voornaam"
+            placeholder="Voornaam"
+          />
+          <input
+            class="inputs"
+            type="text"
+            name="tussenvoegsel"
+            id="tussenvoegsel"
+            placeholder="t.v"
+          />
+          <input
+            class="inputs"
+            type="text"
+            name="achternaam"
+            id="achternaam"
+            placeholder="Achternaam"
+          />
+          <input
+            class="inputs"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email"
+          />
+          <input
+            class="inputs"
+            type="number"
+            name="telephoneNumber"
+            id="telephoneNumber"
+            placeholder="Telfoon nummer"
+          />
+          <input
+            class="inputs"
+            type="text"
+            name="adres"
+            id="adres"
+            placeholder="Adress"
+          />
+          <textarea name="questions" id="questions"></textarea>
+          <input
+            class="inputs"
+            type="submit"
+            name="submit"
+            id="submit"
+            value="Verstuur!"
+          />
         </form>
-        </section>
-    
-
+        <div id="text">
+          <p>
+            <span>De eerste stap...</span> <br> ... … in je nieuw aangelegde tuin. Dat blijft
+            altijd bijzonder. Als ontwerpers en makers van exclusieve tuinen
+            werken wij graag samen met jou toe naar dat moment. De eerste stap
+            zet jij nu, als je tenminste met ons wilt kennismaken. Mail ons of
+            bel ons. Dan is een afspraak zo gemaakt en komen we binnenkort bij
+            je langs.
+          </p>
+        </div>
+      </section>
     </div>
-    
-</body>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (screen.width < 768) {
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+
+        if (screen.width > 768) {
+          if (x.style.display === "none") {
+            x.style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
