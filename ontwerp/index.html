@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/ontwerp/styling.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontwerpen</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+          <nav id="nav-container">
+            <div class="mobile-container">
+              <div class="topnav">
+                <a href="index.html" class="active">Hogedijk Hovenier</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                  <a class="color" href="/onderhoud/index3.html">Onderhoud</a>
+                  <a class="color" href="/overmij/indexovermij.html">Over mij</a>
+                  <a class="color" href="/contact.html">Contact</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </header>
+    </div>
+        
+
+    <section>
+        <p id="contact-text">ONTWERP</p>
+      </section>
+      <section>
+                    <div id="textplace">
+                Ontwerp<br>
+
+                Wat jouw wensen ook zijn, ik maak een goed doordacht ontwerp voor de tuin van je dromen. Met mijn
+                ontwerp krijg je een duidelijk beeld van jouw toekomstige tuin.
+                <br>
+
+                <br>Aanleg<br>
+
+                Van tuinontwerp naar jouw gewenste tuin. Wij verzorgen de aanleg met een goed voorbereid plan. Met
+                een kritisch oog en precisie leg ik de tuin voor je aan.
+                <br>
+
+                <br>Tuinaanleg<br>
+                Het aanleggen van een tuin doen ik altijd vanuit dezelfde drive: ik wil er iets moois van maken.
+            </div>
+            <div id="img">
+                <img src="/ontwerp/image/image plategrond.jpg" width="30.8%" alt="">
+                <img src="/ontwerp/image/Tuin-Ontwerp-web-1.jpg" width="35%" alt="">
+            </div>
+      </section>
+
+
+        <footer>
+            <div id="footertext">
+                <strong>BEL +31 6 3120283.</strong>
+                <p>voor acute service.</p> <br>
+
+                <strong>OF E-mail naar:</strong>
+                <p>Email: jarer36646@probdd.com</p>
+            </div>
+            <div id="footertext1">
+                <strong>Openingstijden:</strong>
+                <p>
+                    - maandag - vrijdag 07:00 - 17:00<br />
+                    - zaterdag alleen op afspraak<br />
+                    - zondag niet open
+                </p>
+            </div>
+            <div id="footertext2">
+                <strong>Locatie:</strong> <br />
+                Koning Wilhelminalaan 7 <br />
+                34G4RF Utrecht
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (screen.width < 768) {
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+  
+          if (screen.width > 768) {
+            if (x.style.display === "none") {
+              x.style.display = "none";
+            }
+          }
+        }
+      </script>
+</body>
+
+</html>
